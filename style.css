@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:azure;
+    flex-direction: column;
+}
+.container {
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:  0px 10px 20px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+.container h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem; 
+    font-weight: 500;
+}
+.setting-display {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.setting {
+    width: 30%;
+    height: 100%;
+    border: 1px solid gray;
+    padding:5px  10px ;
+    display: flex;
+    flex-direction: column;
+}
+.filter-btns  {
+    margin-top: 5px;
+}
+.filter-btns button{
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+}
+.filter-btns button.active {
+    background-color: deepskyblue;
+    color: white;
+}
+.range  {
+    margin: 5px 0px ;
+}
+.range input {
+    margin: 10px 0px ;
+    width: 100%;
+    background-color: linear-gradient(to right, red 0%, red 50%, -fx-base 50%, -fx-base 100%);
+}
+.range .values {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 5px;
+} 
+.flip-rotate-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rotateAndFlip button{
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 0.5px solid gray;
+}
+.rotateAndFlip button img {
+    width: 14px;
+    height: 14px;
+}
+
+.setting-display img {
+    height: 100%;
+    width: 40%;
+    background-color: 1px solid gray;
+    background-size: cover;
+}
+.btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btns button {
+    padding: 7px 15px ;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.btns > .reset {
+    margin-left: 20px;
+}
+.btns > .reset button:hover {
+    background-color: deepskyblue;
+    color: white;
+}
+.reset button {
+    background-color: white;
+    color: gray;
+    border: .5px solid gray ;
+}
+.btns > .save-chose {
+    margin-right: 20px;
+    display: flex;
+}
+.save-chose button:first-child{
+    color: white;
+    background-color: dimgray;
+    border: none;
+    margin: 0px 5px ;
+}
+.save-chose button:last-child{
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+    margin: 0px 5px;
+}
+@media (max-width:850px){
+    body {
+        height: 150vh;
+    }
+    .container {
+        width: 90%;
+        height: 130vh;
+    }
+    .setting-display {
+        flex-direction: column;
+        height: 60%;
+    }
+    .setting {
+        width: 90%;
+        order: 1;
+        height: 60%;
+    }
+    .setting-display img {
+        width: 90%;
+        height: 40%;
+        margin-bottom: 40px;
+    }
+    .btns {
+        flex-direction: column;
+        height: 20%;
+    }
+    .btns > .save-chose {
+        width: 100%;
+        justify-content: space-around;
+        margin: 0px;
+    }
+    .btns > .reset {
+        margin: 10px 0px ;
+    }
+    .save-chose button {
+        margin: 5px 0px;
+    }
+    .rotateAndFlip button{
+        margin-top: 5px ; 
+    }
+    .rotateAndFlip button img {
+        width: 14px;
+        height: 14px;
+    }
+    .container h1 {
+        height: 8%;
+    }
+    #flip_hor {
+        height: 30px;
+    }
+    
+}
